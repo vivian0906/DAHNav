@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="567" id="KGk-i7-Jjw" customClass="DBSPickupPointCell" customModule="DAHNav" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="550" height="567"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="550" height="566"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1dT-yJ-scv">
+                        <rect key="frame" x="0.0" y="64" width="550" height="502"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="502" id="v2w-ms-kfu"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zr9-fb-apa">
+                        <rect key="frame" x="114" y="20" width="323" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="323" id="Ztm-1C-9hW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zr9-fb-apa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="12" id="484-80-8YL"/>
+                    <constraint firstItem="1dT-yJ-scv" firstAttribute="top" secondItem="zr9-fb-apa" secondAttribute="bottom" constant="16" id="EQu-L0-WqC"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="1dT-yJ-scv" secondAttribute="trailing" constant="-8" id="d5T-F6-6sE"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="1dT-yJ-scv" secondAttribute="bottom" constant="-8" id="dWz-54-g6Z"/>
+                    <constraint firstItem="1dT-yJ-scv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="hRi-x4-nFj"/>
+                    <constraint firstItem="zr9-fb-apa" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="lOh-y8-AVI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressLable" destination="zr9-fb-apa" id="Ccz-8v-VSv"/>
+                <outlet property="contentImageView" destination="1dT-yJ-scv" id="6c4-AT-ZHH"/>
+            </connections>
+            <point key="canvasLocation" x="184" y="327.5"/>
+        </tableViewCell>
+    </objects>
+</document>
