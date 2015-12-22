@@ -73,6 +73,10 @@ class DBSShuttleBusViewController: UIViewController,UITableViewDelegate, UITable
         // Dispose of any resources that can be recreated.
     }
     
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
+    }
+    
     
     // MARK: - Table Delegate
     func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {

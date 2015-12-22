@@ -18,6 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBar.appearance().tintColor = UIColor.blackColor()
         
         UIApplication.sharedApplication().idleTimerDisabled = true
+        
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
         return true
     }
 

@@ -12,22 +12,20 @@ class FirstViewController: UIViewController {
     
     @IBOutlet weak var barItem: UITabBarItem!
     
-    func setBarItem(){
-        
-        let titleDict: NSDictionary = [NSBackgroundColorAttributeName: UIColor.whiteColor()]
-        barItem.setTitleTextAttributes(titleDict as? [String : AnyObject], forState: UIControlState.Normal)
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        setBarItem()
-        UIApplication.sharedApplication().statusBarStyle = .LightContent
+        //UIApplication.sharedApplication().statusBarStyle = .LightContent
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
     }
 
 
